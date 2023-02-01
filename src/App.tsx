@@ -1,3 +1,5 @@
+import Actions from "./components/Actions/Actions";
+
 const App = (): JSX.Element => {
   return (
     <div className="container">
@@ -39,15 +41,7 @@ const App = (): JSX.Element => {
               <button className="key big">delete</button>
             </li>
           </ol>
-        </div>
-        <div className="actions">
-          <span className="number">667359961</span>
-          <a href="call" className="call">
-            Call
-          </a>
-          <a href="hang-up" className="hang active">
-            Hang up
-          </a>
+          <Actions />
         </div>
       </main>
     </div>
