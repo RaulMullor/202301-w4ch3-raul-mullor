@@ -1,9 +1,13 @@
 import "./Key.css";
 
-export const Key = (): JSX.Element => {
+export interface KeyProps {
+  keyNumber: number;
+}
+
+export const Key = ({ keyNumber }: KeyProps): JSX.Element => {
   return (
     <li>
-      <button className="key">1</button>
+      <button className="key">{keyNumber}</button>
     </li>
   );
 };
