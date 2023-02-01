@@ -12,14 +12,7 @@ body {
   background-color: #242424;
   color: #d2d2d2;
 }
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-li {
-  list-style: none;
-}
+
 .container {
   height: 100vh;
   display: flex;
@@ -28,23 +21,9 @@ li {
   align-items: center;
 }
 
-.message {
-  line-height: 50px;
-}
 .phone {
   display: grid;
   grid-template-columns: 1fr 1fr;
-}
-
-.number {
-  background-color: #fff;
-  color: #454545;
-  padding: 5px 20px;
-  width: 150px;
-  border-radius: 30px;
-  text-align: center;
-  margin: 50px 0;
-  height: 31px;
 }
 .off {
   visibility: hidden !important;
