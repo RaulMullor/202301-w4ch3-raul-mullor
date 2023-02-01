@@ -2,6 +2,8 @@ import { Keyboard } from "./Keyboard/Keyboard";
 
 import Display from "./components/Display/Display";
 
+import Actions from "./components/Actions/Actions";
+
 const App = (): JSX.Element => {
   return (
     <div className="container">
@@ -10,6 +12,7 @@ const App = (): JSX.Element => {
         <Keyboard />
         <div className="actions">
           <Display />
+          <Actions />
           <a href="call" className="call">
             Call
           </a>
