@@ -1,8 +1,10 @@
+import Display from "../Display/Display";
 import "./Actions.css";
 
 const Actions = (): JSX.Element => {
   return (
     <div className="actions">
+      <Display />
       <a href="call" className="call">
         Call
       </a>
