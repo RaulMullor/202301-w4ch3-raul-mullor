@@ -1,4 +1,4 @@
-import { Keyboard } from "./Keyboard/Keyboard";
+import { Keyboard } from "./components/Keyboard/Keyboard";
 
 import Display from "./components/Display/Display";
 
