@@ -11,6 +11,10 @@ const PhoneContextProvider = ({
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const addNumbers = (number: string): void => {
+    if (number === "delete") {
+      setPhoneNumber("");
+      return;
+    }
     if (phoneNumber.length === 9) {
       return;
     }
