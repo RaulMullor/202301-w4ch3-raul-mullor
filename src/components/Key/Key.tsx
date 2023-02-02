@@ -1,3 +1,6 @@
+import { useContext } from "react";
+import { PhoneContext } from "../../store/context/PhoneContext";
+
 import "./Key.css";
 
 export interface KeyProps {
@@ -5,5 +8,6 @@ export interface KeyProps {
 }
 
 export const Key = ({ keyLabel }: KeyProps): JSX.Element => {
-  return <button>{keyLabel}</button>;
+  const { addNumbers } = useContext(PhoneContext);
+  return <button onClick={() => addNumbers(keyLabel)}>{keyLabel}</button>;
 };
