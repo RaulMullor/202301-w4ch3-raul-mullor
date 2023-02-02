@@ -1,13 +1,10 @@
 import "./Key.css";
 
 export interface KeyProps {
-  keyNumber: number;
+  keyLabel: string;
+  className: string;
 }
 
-export const Key = ({ keyNumber }: KeyProps): JSX.Element => {
-  return (
-    <li>
-      <button className="key">{keyNumber}</button>
-    </li>
-  );
+export const Key = ({ className, keyLabel }: KeyProps): JSX.Element => {
+  return <button className={className}>{keyLabel}</button>;
 };
