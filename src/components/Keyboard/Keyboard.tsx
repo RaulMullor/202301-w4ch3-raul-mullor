@@ -20,8 +20,8 @@ export const Keyboard = (): JSX.Element => {
     <div className="keyboard-container">
       <ol className="keyboard">
         {keyLabels.map((keyLabel) => (
-          <li>
-            <Key className={"key"} keyLabel={keyLabel} />
+          <li key={keyLabel}>
+            <Key key={keyLabel} className={"key"} keyLabel={keyLabel} />
           </li>
         ))}
       </ol>

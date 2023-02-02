@@ -11,7 +11,11 @@ export interface KeyProps {
 export const Key = ({ keyLabel }: KeyProps): JSX.Element => {
   const { addNumbers } = useContext(PhoneContext);
   return (
-    <button className={"key"} onClick={() => addNumbers(keyLabel)}>
+    <button
+      key={keyLabel}
+      className={"key"}
+      onClick={() => addNumbers(keyLabel)}
+    >
       {keyLabel}
     </button>
   );
