@@ -5,9 +5,14 @@ import "./Key.css";
 
 export interface KeyProps {
   keyLabel: string;
+  className: string;
 }
 
 export const Key = ({ keyLabel }: KeyProps): JSX.Element => {
   const { addNumbers } = useContext(PhoneContext);
-  return <button onClick={() => addNumbers(keyLabel)}>{keyLabel}</button>;
+  return (
+    <button className={"key"} onClick={() => addNumbers(keyLabel)}>
+      {keyLabel}
+    </button>
+  );
 };
