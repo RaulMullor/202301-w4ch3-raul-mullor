@@ -11,6 +11,9 @@ const PhoneContextProvider = ({
   const [phoneNumber, setPhoneNumber] = useState("");
 
   const addNumbers = (number: string): void => {
+    if (phoneNumber.length === 9) {
+      return;
+    }
     setPhoneNumber(phoneNumber + number);
   };
 
